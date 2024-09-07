@@ -3,8 +3,8 @@
 #42login : elakhfif
 
 path=$(pwd)
-shouldRemove='0'
-alreadyInstall=$(grep "####[ tarzan ]####" < ~/.zshrc)
+shouldRemove='0' ####10108tarzanCLNNR10108####
+alreadyInstall=$(grep "####10108tarzanCLNNR10108####" ~/.zshrc)
     
     if [  ${#alreadyInstall} == 0 ]
     then
@@ -12,7 +12,7 @@ alreadyInstall=$(grep "####[ tarzan ]####" < ~/.zshrc)
     else
         while read -r line
         do
-            if [[ ! $line =~ "####[ tarzan ]####" ]]
+            if [[ ! $line =~ "####10108tarzanCLNNR10108####" ]]
             then
                 if [ $shouldRemove == '0' ]
                 then
