@@ -8,7 +8,7 @@ then
     StorageBefore="0B"
 fi
 
-printf "\n\033[32mtarzan is cleaning... \033[0m\n\n"
+printf "\n\033[32mtarzan is cleaning... \033[0m\n"
 
 clean42Caches() {
     /bin/rm -rf ~/Library/*.42* &>/dev/null
