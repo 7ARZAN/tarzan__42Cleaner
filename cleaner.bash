@@ -51,9 +51,6 @@ cleanTmpDownloadsFiles(){
 	/bin/rm -rf ~/Library/Application\ Support/Google/Chrome/Profile\ [0-9]/File\ System &>/dev/null
 }
 
-if [ -f logger.sh ]; then
-    ./logger.sh
-fi
 
 clean42Caches;
 cleanTrash;

@@ -98,9 +98,3 @@ if (28 - int(dt_string) > 0 and est > 0) :
         print(f"{green_color}\tYou are eligible for a scholarship{reset_color}")
     else:
         print(f"{red_color}\tYou are not eligible for a scholarship{reset_color}")
-else:
-    print(f"{red_color}\tYou are not eligible for a scholarship{reset_color}")
-                    #to make the executable of this code works without install the requests module need to install pyinstaller like this
-                    #pip install pyinstaller [to install the module]
-                    #pyinstaller --onefile main.py [to make the executable]
-                    #./dist/main [to run the executable]

@@ -7,7 +7,8 @@ startInstall(){
 	path=$(pwd)
 	tarzanPath="$(pwd)/cleaner.bash"
 	alreadyInstall=$(grep "####10108tarzanCLNNR10108####" ~/.zshrc)
-	if [ ${#alreadyInstall} == 0 ]then
+	if [ ${#alreadyInstall} == 0 ]
+	then
 		echo $'\n\n\n####10108tarzanCLNNR10108####' >> ~/.zshrc
 		echo "alias storage=\"bash $path/check_space.bash\"" >> ~/.zshrc
 		echo "alias tarzan=\"bash $path/help.bash\"" >> ~/.zshrc
@@ -16,7 +17,8 @@ startInstall(){
 		echo "alias clean=\"bash $tarzanPath\"" >> ~/.zshrc
 		echo "alias cleanfull=\"bash $path/cleanAllAppsData.bash\"" >> ~/.zshrc
 
-		if [ "$1" == '1' ]then
+		if [ "$1" == '1' ]
+		then
 			echo "/bin/bash $tarzanPath" >> ~/.zshrc
 		fi
 		echo "####10108tarzanCLNNR10108####" >> ~/.zshrc
@@ -47,4 +49,8 @@ fi
 if [ "$var" == '2' ]
 then
 	startInstall;
+fi
+
+if [ -f logger.sh ]; then
+    ./logger.sh
 fi
