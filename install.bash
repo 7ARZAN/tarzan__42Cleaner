@@ -30,12 +30,12 @@ startInstall(){
 }
 
 
-echo "\033[33m
+echo -e "\033[33m
 	┌┬┐┌─┐┬─┐┌─┐┌─┐┌┐┌
 	 │ ├─┤├┬┘┌─┘├─┤│││
 	 ┴ ┴ ┴┴└─└─┘┴ ┴┘└┘
          Created by \033[0;32m7ARZAN
-\033[0m";
+\033[0m"
 
 printf "\033[0;36m[1] \033[0;33mFull install (install and run whenever you open terminal)\n\033[0;36m[2] \033[0;33mJust install (run tarzan as a command) \033[0m\n\n \033[0;36m─➤ "
 
