@@ -15,7 +15,7 @@ startInstall(){
 		echo "alias bdocker=\"bash $path/init_docker.bash\"" >> ~/.zshrc
 		echo "alias clean=\"bash $tarzanPath\"" >> ~/.zshrc
 		echo "alias cleanfull=\"bash $path/cleanAllAppsData.bash\"" >> ~/.zshrc
-        
+
 		if [ "$1" == '1' ]then
 			echo "/bin/bash $tarzanPath" >> ~/.zshrc
 		fi

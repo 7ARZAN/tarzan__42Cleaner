@@ -90,7 +90,7 @@ else
 		┌┬┐┌─┐┬─┐┌─┐┌─┐┌┐┌
 		 │ ├─┤├┬┘┌─┘├─┤│││
 		 ┴ ┴ ┴┴└─└─┘┴ ┴┘└┘
-		Created by \033[0;32m7ARZAN\033[0;33m and \033[0;32mROUDOUCH\033[0;33m\033[0m"
+		Created by \033[0;32m7ARZAN\033[0;33m\033[0m"
 
 		printf "\n\033[0;33mtarzan will always run when you open the terminal, you don't need to do anything.\033[0m"
 		printf "\n\n\033[0;35m------- Command line you can run -------\033[0m\n\n"
@@ -103,5 +103,6 @@ else
 		printf "|- To deactivate dark-mode: \033[4;36mtarzan deactivate dark-mode\n\n\033[0m"
 		printf "|- To active \"code\" command (Vscode): \033[4;36mtarzan active code\n\n\033[0m"
 		printf "|- To deactivate \"code\" command: \033[4;36mtarzan deactivate code\n\n\033[0m"
+		printf "|- To see your logtime: \033[4;36mlogtime [YOUR/FRIEND 42LOGIN]\n\n\033[0m"
 		printf "|- for help: \033[4;36mtarzan\n\n\033[0m"
 fi
