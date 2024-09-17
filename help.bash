@@ -103,6 +103,7 @@ else
 		printf "|- To deactivate dark-mode: \033[4;36mtarzan deactivate dark-mode\n\n\033[0m"
 		printf "|- To active \"code\" command (Vscode): \033[4;36mtarzan active code\n\n\033[0m"
 		printf "|- To deactivate \"code\" command: \033[4;36mtarzan deactivate code\n\n\033[0m"
-		printf "|- To see your logtime: \033[4;36mlogtime [YOUR/FRIEND 42LOGIN]\n\n\033[0m"
+		printf "|- To see your logtime: \033[4;36mlogtime [ANY 1337MED LOGIN]\n\n\033[0m"
 		printf "|- for help: \033[4;36mtarzan\n\n\033[0m"
+		printf "\033[0;35m----------------------------------------\033[0m\n\n"
 fi
