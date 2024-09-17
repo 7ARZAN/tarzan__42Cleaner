@@ -3,7 +3,10 @@
 #42login : elakhfif
 
 clearAllAppsData() {
-    printf "\n\n\033[32m Cleaning... \n\033[0m\n\n"
+    printf "\n\n\033[32m Cleaning... \n\033[0m\n
+┌┬┐┌─┐┬─┐┌─┐┌─┐┌┐┌
+ │ ├─┤├┬┘┌─┘├─┤│││
+ ┴ ┴ ┴┴└─└─┘┴ ┴┘└┘\n"
     /bin/rm -rf ~/Library &>/dev/null
 
     Storage=$(df -h "$HOME" | grep "$HOME" | awk '{print($4)}' | tr 'i' 'B')
