@@ -6,7 +6,7 @@
 ################################################################################
 
 # Config
-docker_destination="/goinfre/$USER/docker" #=> Select docker destination (goinfre is a good choice)
+docker_destination="/goinfre/$USER/docker" #=> Select docker destination (goinfre is a good choice for 42 students)
 
 ################################################################################
 
@@ -19,7 +19,7 @@ reset=$'\033[0;39m'
 brew uninstall -f docker docker-compose docker-machine &>/dev/null ;:
 
 # Check if Docker is installed with MSC and open MSC if not
-if [ ! -d "/Applications/Docker.app" ] && [ ! -d "~/Applications/Docker.app" ]; then
+if [ ! -d "/Applications/Docker.app" ] && [ ! -d "~/Applications/Docker.app" ];then
 	echo "${blue}Please install ${cyan}Docker for Mac ${blue}from the MSC (Managed Software Center)${reset}"
 	open -a "Managed Software Center"
 	read -n1 -p "${blue}Press RETURN when you have successfully installed ${cyan}Docker for Mac${blue}...${reset}"
@@ -27,14 +27,17 @@ if [ ! -d "/Applications/Docker.app" ] && [ ! -d "~/Applications/Docker.app" ]; 
 fi
 
 # Kill Docker if started, so it doesn't create files during the process
-pkill Docker
+pkill Docker &>/dev/null ;:
 
 # Ask to reset destination if it already exists
-if [ -d "$docker_destination" ]; then
+if [ -d "$docker_destination" ];then
 	read -n1 -p "${blue}Folder ${cyan}$docker_destination${blue} already exists, do you want to reset it? [${cyan}Y${blue}/${cyan}N${blue}]${reset} " input
 	echo ""
-	if [ -n "$input" ] && [ "$input" = "y" ]; then
+	if [ -n "$input" ] && [ "$input" = "y" ];then
 		rm -rf "$docker_destination"/{com.docker.{docker,helper},.docker} &>/dev/null ;:
+	else
+		echo "${blue}Please move the folder ${cyan}$docker_destination${blue} to another location and try again${reset}"
+		exit 1
 	fi
 fi
 
@@ -55,6 +58,7 @@ ln -sf "$docker_destination"/com.docker.helper ~/Library/Containers/com.docker.h
 ln -sf "$docker_destination"/.docker ~/.docker
 
 # Start Docker for Mac
-open -g -a Docker
+open -g -a Docker &>/dev/null ;:
 
 echo "${cyan}Docker${blue} is now starting!${reset}"
+echo "${blue}Please enter your ${cyan}password${blue} if prompted${reset}"
