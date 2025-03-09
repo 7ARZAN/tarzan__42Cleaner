@@ -8,7 +8,7 @@ then
     StorageBefore="0B"
 fi
 
-printf "\n\033[32mtarzan is cleaning... \033[0m\n"
+printf "\n\033[32m\t\t\t\ttarzan is cleaning... \033[0m\n"
 
 clean42Caches(){
 	/bin/rm -rf ~/Library/*.42* &>/dev/null
@@ -42,6 +42,7 @@ cleanDS_StoreFiles(){
 	find ~/Downloads -name .DS_Store -depth -exec /bin/rm {} \; &>/dev/null
 	find ~/Documents -name .DS_Store -depth -exec /bin/rm {} \; &>/dev/null
 	find ~/Pictures -name .DS_Store -depth -exec /bin/rm {} \; &>/dev/null
+	find ~/ -name .DS_Store -depth -exec /bin/rm {} \; &>/dev/null
 }
 
 cleanTmpDownloadsFiles(){
@@ -65,5 +66,5 @@ if [ "$Storage" == "0BB" ];then
 	Storage="0B"
 fi
 
-printf "\n\033[32m[ storage :  \033[0;31mbefore= $StorageBefore  \033[32m=> \033[0m"
+printf "\n\033[32m\t\t  [  storage :  \033[0;31mbefore= $StorageBefore  \033[32m=> \033[0m"
 printf "\033[32mafter= $Storage  ]\033[0m\n\n"

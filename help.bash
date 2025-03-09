@@ -95,7 +95,7 @@ else
 		printf "\n\033[0;33mtarzan will always run when you open the terminal, you don't need to do anything.\033[0m"
 		printf "\n\n\033[0;35m------- Command line you can run -------\033[0m\n\n"
 		printf "|- To clean your computer: \033[4;36mclean\n\n\033[0m"
-		printf "|- To run docker: \033[4;36mbdocker\n\n\033[0m"
+		printf "|- To run docker: \033[4;36mbdocker [ Just CTRL+C if they ask for Password ]\n\n\033[0m"
 		printf "|- To clean all the applications data in your computer: \033[4;36mcleanfull \033[0m \033[0;31m[WARNING] \033[0m\n\n"
 		printf "|- To see your free space: \033[4;36mstorage\n\n\033[0m"
 		printf "|- To Uninstall tarzan: \033[4;36muntarzan\n\n\033[0m"
@@ -103,7 +103,6 @@ else
 		printf "|- To deactivate dark-mode: \033[4;36mtarzan deactivate dark-mode\n\n\033[0m"
 		printf "|- To active \"code\" command (Vscode): \033[4;36mtarzan active code\n\n\033[0m"
 		printf "|- To deactivate \"code\" command: \033[4;36mtarzan deactivate code\n\n\033[0m"
-		printf "|- To see your logtime: \033[4;36mlogtime [ANY 1337MED LOGIN]\n\n\033[0m"
 		printf "|- for help: \033[4;36mtarzan\n\n\033[0m"
 		printf "\033[0;35m----------------------------------------\033[0m\n\n"
 fi
